@@ -1,0 +1,46 @@
+{
+  "name": "gulp-query-selector",
+  "version": "0.0.1",
+  "description": "Selects DOM nodes from vinyls",
+  "keywords": [
+    "gulpplugin",
+    "queryselector",
+    "query",
+    "selector",
+    "dom",
+    "html",
+    "gulp",
+    "vinyl"
+  ],
+  "author": {
+    "name": "Maciej Chałapuk",
+    "email": "maciej@chalapuk.pl",
+    "url": "https://github.com/muroc"
+  },
+  "repository": "webfront-toolkit/gulp-query-selector",
+  "scripts": {
+    "test": "mocha"
+  },
+  "main": "./index.js",
+  "dependencies": {
+    "gulp-util": "~2.2.0",
+    "jsdom": "^6.5.1",
+    "query-selector": "^1.0.9",
+    "through2": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "~2.1.0",
+    "coffee-script": "~1.7.1",
+    "event-stream": "~3.1.0",
+    "tmp": "0.0.27",
+    "stream-assert": "~2.0.3",
+    "funsert": "~0.1.1",
+    "gulp": "~3.9.0"
+  },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=1.2.10"
+  },
+  "license": "MIT"
+}
