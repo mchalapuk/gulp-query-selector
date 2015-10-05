@@ -1,7 +1,7 @@
 {
   "name": "gulp-query-selector",
   "version": "0.0.1",
-  "description": "Selects DOM nodes from vinyls",
+  "description": "Selects DOM nodes from HTML in Node.js streams.",
   "keywords": [
     "gulpplugin",
     "queryselector",

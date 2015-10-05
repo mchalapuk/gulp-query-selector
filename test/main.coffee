@@ -60,3 +60,17 @@ describe "gulp-query-selector", ->
 				String(result.contents).should.be.eql '<child>third</child>'
 			.pipe assert.end done
 
+	it 'should produce proper file names', (done) ->
+		sourceFiles = src.map (file) -> file.name
+
+		gulp.src sourceFiles
+			.pipe querySelector '*'
+			.pipe assert.length 19
+			.pipe assert.nth 0, itis.ok (result) ->
+				result.path.should.be.eql (sourceFiles[0] + '.selection-0000.html')
+			.pipe assert.nth 1, itis.ok (result) ->
+				result.path.should.be.eql (sourceFiles[0] + '.selection-0001.html')
+			.pipe assert.nth 18, itis.ok (result) ->
+				result.path.should.be.eql (sourceFiles[2] + '.selection-0006.html')
+			.pipe assert.end done
+
