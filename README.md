@@ -23,7 +23,10 @@ gulp.task("make-html", function(){
     .pipe(querySelector("body > *"))
     .pipe(querySelector.groupBySource());
   return gulp.src("index.html")
-    .pipe(inject(partials))
+    .pipe(inject(partials), {
+      starttag: '<!-- inject:partials -->',
+      transform: function (filePath, file) { return file.contents.toString('utf8'); }
+    })
     .pipe(gulp.dest("./dist"));
 });
 ```
