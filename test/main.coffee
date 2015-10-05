@@ -74,3 +74,21 @@ describe "gulp-query-selector", ->
 				result.path.should.be.eql (sourceFiles[2] + '.selection-0006.html')
 			.pipe assert.end done
 
+	it 'should group selections by source file', (done) ->
+		sourceFiles = src.map (file) -> file.name
+
+		gulp.src sourceFiles
+			.pipe querySelector 'child'
+			.pipe querySelector.groupBySource()
+			.pipe assert.length 3
+			.pipe assert.nth 0, itis.ok (result) ->
+				String(result.contents).should.be.eql '<child>first</child>'
+				result.path.should.be.eql sourceFiles[0]
+			.pipe assert.nth 1, itis.ok (result) ->
+				String(result.contents).should.be.eql '<child>first</child>\n<child>second</child>'
+				result.path.should.be.eql sourceFiles[1]
+			.pipe assert.nth 2, itis.ok (result) ->
+				String(result.contents).should.be.eql '<child>first</child>\n<child>second</child>\n<child>third</child>'
+				result.path.should.be.eql sourceFiles[2]
+			.pipe assert.end done
+
