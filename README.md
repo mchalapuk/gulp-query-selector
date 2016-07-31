@@ -1,6 +1,8 @@
 # gulp-query-selector
-[![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Dependency Status][david-image]][david-url]
+[![devDependency Status][david-image-dev]][david-url-dev]
+[![NPM version][npm-image]][npm-url]
 
 Selects DOM nodes from Node.js streams and packs selected code into separated streams.
 
@@ -38,9 +40,15 @@ these contents to another HTML code using [gulp-inject](https://github.com/klei/
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
-[npm-url]: https://npmjs.org/package/gulp-query-selector
-[npm-image]: https://badge.fury.io/js/gulp-query-selector
-
 [travis-url]: http://travis-ci.org/webfront-toolkit/gulp-query-selector
 [travis-image]: https://secure.travis-ci.org/webfront-toolkit/gulp-query-selector.png?branch=master
+
+[david-url]: https://david-dm.org/webfront-toolkit/gulp-query-selector
+[david-image]: https://david-dm.org/webfront-toolkit/gulp-query-selector.svg
+
+[david-url-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector#info=devDependencies
+[david-image-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector/dev-status.svg
+
+[npm-url]: https://npmjs.org/package/gulp-query-selector
+[npm-image]: https://badge.fury.io/js/gulp-query-selector.svg
 
