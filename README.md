@@ -46,7 +46,7 @@ these contents to another HTML code using [gulp-inject](https://github.com/klei/
 [david-url]: https://david-dm.org/webfront-toolkit/gulp-query-selector
 [david-image]: https://david-dm.org/webfront-toolkit/gulp-query-selector.svg
 
-[david-url-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector#info=devDependencies
+[david-url-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector?type=dev
 [david-image-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector/dev-status.svg
 
 [npm-url]: https://npmjs.org/package/gulp-query-selector
