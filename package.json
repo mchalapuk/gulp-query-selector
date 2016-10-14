@@ -1,6 +1,6 @@
 {
   "name": "gulp-query-selector",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Selects DOM nodes from HTML in Node.js streams.",
   "keywords": [
     "gulpplugin",
