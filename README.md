@@ -40,14 +40,14 @@ these contents to another HTML code using [gulp-inject](https://github.com/klei/
 
 [MIT License](http://en.wikipedia.org/wiki/MIT_License)
 
-[travis-url]: http://travis-ci.org/webfront-toolkit/gulp-query-selector
-[travis-image]: https://secure.travis-ci.org/webfront-toolkit/gulp-query-selector.png?branch=master
+[travis-url]: http://travis-ci.org/muroc/gulp-query-selector
+[travis-image]: https://secure.travis-ci.org/muroc/gulp-query-selector.png?branch=master
 
-[david-url]: https://david-dm.org/webfront-toolkit/gulp-query-selector
-[david-image]: https://david-dm.org/webfront-toolkit/gulp-query-selector.svg
+[david-url]: https://david-dm.org/muroc/gulp-query-selector
+[david-image]: https://david-dm.org/muroc/gulp-query-selector.svg
 
-[david-url-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector?type=dev
-[david-image-dev]: https://david-dm.org/webfront-toolkit/gulp-query-selector/dev-status.svg
+[david-url-dev]: https://david-dm.org/muroc/gulp-query-selector?type=dev
+[david-image-dev]: https://david-dm.org/muroc/gulp-query-selector/dev-status.svg
 
 [npm-url]: https://npmjs.org/package/gulp-query-selector
 [npm-image]: https://badge.fury.io/js/gulp-query-selector.svg
