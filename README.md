@@ -38,7 +38,7 @@ these contents to another HTML code using [gulp-inject](https://github.com/klei/
 
 ## License
 
-[MIT License](http://en.wikipedia.org/wiki/MIT_License)
+Copyright &copy; 2016 Maciej Chałapuk. Released under [MIT License](LICENSE).
 
 [travis-url]: http://travis-ci.org/muroc/gulp-query-selector
 [travis-image]: https://secure.travis-ci.org/muroc/gulp-query-selector.png?branch=master
