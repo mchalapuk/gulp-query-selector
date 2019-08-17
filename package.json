@@ -15,9 +15,9 @@
   "author": {
     "name": "Maciej Chałapuk",
     "email": "maciej@chalapuk.pl",
-    "url": "https://github.com/muroc"
+    "url": "https://github.com/mchalapuk"
   },
-  "repository": "webfront-toolkit/gulp-query-selector",
+  "repository": "https://github.com/mchalapuk/gulp-query-selector",
   "scripts": {
     "test": "mocha"
   },
