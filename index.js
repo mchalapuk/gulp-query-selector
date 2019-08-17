@@ -2,8 +2,8 @@
 
 var gutil   = require("gulp-util");
 var through = require("through2");
-var querySelectorAll = require("query-selector");
-var jsdom = require("jsdom").jsdom;
+var querySelectorAll = require("query-selector").default;
+var jsdom = require("jsdom");
 
 function gulpError(message) {
   return new gutil.PluginError('gulp-query-selector', message)
@@ -34,7 +34,7 @@ module.exports = function(selector) {
 
     function runQuery() {
       try {
-        var doc = jsdom(new String(file.contents));
+        var doc = new jsdom.JSDOM(new String(file.contents)).window.document;
         var results = querySelectorAll(selector, doc);
         return results;
 
@@ -48,7 +48,7 @@ module.exports = function(selector) {
     results.forEach(function(node, i) {
       var resultFile = new gutil.File({
         path: file.path +'.selection-'+ ('0000'+ i).slice(-4) +'.html',
-        contents: new Buffer(node.outerHTML),
+        contents: Buffer.from(node.outerHTML, 'utf-8'),
       });
       resultFile.sourceFile = file;
       self.push(resultFile);
@@ -76,7 +76,7 @@ module.exports.groupBySource = function() {
     var self = this;
     Object.keys(groups).forEach(function(path) {
       var group = groups[path];
-      self.push(new gutil.File({ path: path, contents: new Buffer(group.join('\n')) }));
+      self.push(new gutil.File({ path: path, contents: Buffer.from(group.join('\n'), 'utf-8') }));
     });
     return callback();
   }
