@@ -19,7 +19,8 @@
   },
   "repository": "https://github.com/mchalapuk/gulp-query-selector",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "deploy": "npm install && npm test && npm publish"
   },
   "main": "./index.js",
   "dependencies": {
