@@ -24,10 +24,11 @@
   },
   "main": "./index.js",
   "dependencies": {
-    "gulp-util": "~3.0.7",
     "jsdom": "^15.1.1",
+    "plugin-error": "^1.0.1",
     "query-selector": "^2.0.0",
-    "through2": "*"
+    "through2": "*",
+    "vinyl": "^2.2.0"
   },
   "devDependencies": {
     "coffee-script": "^1.11.1",

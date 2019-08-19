@@ -1,12 +1,13 @@
 'use strict';
 
-var gutil   = require("gulp-util");
+var Vinyl = require("vinyl");
+var PluginError = require("plugin-error");
 var through = require("through2");
 var querySelectorAll = require("query-selector").default;
 var jsdom = require("jsdom");
 
 function gulpError(message) {
-  return new gutil.PluginError('gulp-query-selector', message)
+  return new PluginError('gulp-query-selector', message)
 }
 
 module.exports = function(selector) {
@@ -46,7 +47,7 @@ module.exports = function(selector) {
 
     var results = runQuery();
     results.forEach(function(node, i) {
-      var resultFile = new gutil.File({
+      var resultFile = new Vinyl({
         path: file.path +'.selection-'+ ('0000'+ i).slice(-4) +'.html',
         contents: Buffer.from(node.outerHTML, 'utf-8'),
       });
@@ -76,7 +77,7 @@ module.exports.groupBySource = function() {
     var self = this;
     Object.keys(groups).forEach(function(path) {
       var group = groups[path];
-      self.push(new gutil.File({ path: path, contents: Buffer.from(group.join('\n'), 'utf-8') }));
+      self.push(new Vinyl({ path: path, contents: Buffer.from(group.join('\n'), 'utf-8') }));
     });
     return callback();
   }

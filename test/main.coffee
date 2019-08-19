@@ -1,16 +1,13 @@
-es = require 'event-stream'
+
 fs = require 'fs'
 should = require 'should'
-mocha = require 'mocha'
 gulp = require 'gulp'
-gutil = require 'gulp-util'
 tmp = require 'tmp'
 assert = require 'stream-assert'
 itis = require 'funsert'
 
 delete require.cache[ require.resolve '../' ]
 
-gutil = require 'gulp-util'
 querySelector = require '../'
 
 describe "gulp-query-selector", ->
