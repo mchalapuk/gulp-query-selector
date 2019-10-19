@@ -35,7 +35,7 @@
     "event-stream": "^4.0.1",
     "funsert": "~0.1.1",
     "gulp": "^4.0.2",
-    "mocha": "^6.2.1",
+    "mocha": "^6.2.2",
     "should": "^13.2.3",
     "stream-assert": "~2.0.3",
     "tmp": "^0.1.0"
