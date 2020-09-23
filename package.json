@@ -28,7 +28,7 @@
     "plugin-error": "^1.0.1",
     "query-selector": "^2.0.0",
     "through2": "^4.0.2",
-    "vinyl": "^2.2.0"
+    "vinyl": "^2.2.1"
   },
   "devDependencies": {
     "coffee-script": "^1.11.1",
